@@ -1,5 +1,7 @@
 #include <PR/ultratypes.h>
 
+#include "game/level_update.h"
+
 #include "lag.h"
 #include "tas_playback.h"
 
@@ -15,4 +17,8 @@ void run_demo_inputs_hook(void) {
 
 void display_and_vsync_hook(void) {
     update_lag();
+}
+
+void update_hud_values_hook(void) {
+    gHudDisplay.lives = gLagCounter % 100;
 }

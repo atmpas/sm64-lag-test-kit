@@ -4,7 +4,6 @@
 #include "game/area.h"
 #include "game/camera.h"
 #include "game/game_init.h"
-#include "game/level_update.h"
 #include "game/print.h"
 #include "sm64.h"
 
@@ -195,7 +194,5 @@ void update_playback(void) {
         if (!restarted) {
             advance_playback();
         }
-
-        gMarioStates[0].numLives = gLagCounter % 100;
     }
 }
