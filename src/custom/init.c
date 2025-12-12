@@ -7,6 +7,7 @@
 #include "segment_symbols.h"
 
 #include "game/game_init.h"
+#include "game/level_update.h"
 #include "game/memory.h"
 
 #include "custom.h"
@@ -17,6 +18,7 @@
 static struct Hook sHookTargets[] = {
     { run_demo_inputs, run_demo_inputs_hook },
     { display_and_vsync, display_and_vsync_hook },
+    { update_hud_values, update_hud_values_hook },
 };
 
 static void load_engine_code_segment(void) {

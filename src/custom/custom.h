@@ -3,5 +3,6 @@
 
 void run_demo_inputs_hook(void);
 void display_and_vsync_hook(void);
+void update_hud_values_hook(void);
 
 #endif // CUSTOM_H
